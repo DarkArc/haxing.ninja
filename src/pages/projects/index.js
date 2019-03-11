@@ -22,7 +22,6 @@ class AboutMe extends React.Component {
         <RawContainer>
           <div className="row mb-3">
           {projects.map(({ node }) => {
-            const title = node.frontmatter.title || node.fields.slug
             return (
               <div className="col-md-6">
                 <div className="card mt-3" style={{minHeight: 'calc(100% - 1em)'}}>

@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Bootstrap from "../components/bootstrap"
 import NavBar from "../components/nav-bar"

@@ -1,10 +1,10 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import Bootstrap from "../../components/bootstrap"
 import NavBar from "../../components/nav-bar"
-import PrimaryContainer from "../../components/primary-container"
+import RawContainer from "../../components/raw-container"
 import SEO from "../../components/seo"
 
 class GalleryIndex extends React.Component {
@@ -20,19 +20,19 @@ class GalleryIndex extends React.Component {
           title="Gallery"
           keywords={[`gallery`]}
         />
-        <PrimaryContainer>
-          <div className="row">
+        <RawContainer>
+          <div className="row mb-3">
           {images.map(({ node }) => {
             return (
               <div className="col-lg-4 mt-3">
-                <a href={node.childImageSharp.fluid.originalImg} target="_blank">
+                <a href={node.childImageSharp.fluid.originalImg} target="_blank" rel="noopener noreferrer">
                   <Img fluid={node.childImageSharp.fluid} />
                 </a>
               </div>
             )
           })}
           </div>
-        </PrimaryContainer>
+        </RawContainer>
       </div>
     )
   }
