@@ -1,7 +1,7 @@
 ---
 title: Venom
 description: Venom is a file upload utility that started out as a script to quickly update the server over sftp.
-github-url: https://github.com/DarkArc/Venom
+github_url: https://github.com/DarkArc/Venom
 ---
 Venom is a file upload utility that started out as a script to quickly update the server over sftp.
 

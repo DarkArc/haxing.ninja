@@ -1,7 +1,7 @@
 ---
 title: Game Chatter
 description: Game Chatter is a WebSockets based game chat integration system.
-github-url: https://github.com/DarkArc/GameChatterServer
+github_url: https://github.com/DarkArc/GameChatterServer
 ---
 Game Chatter is a WebSockets based game chat integration system.
 
