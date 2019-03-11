@@ -1,0 +1,7 @@
+blockquote {
+  margin-left: 1em;
+  margin-bottom: 1em;
+  padding-left: 1em;
+  border-left: 5px solid lightblue;
+  font-style: italic;
+}
