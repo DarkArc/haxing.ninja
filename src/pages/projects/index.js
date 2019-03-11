@@ -20,7 +20,7 @@ class AboutMe extends React.Component {
           keywords={[`projects`]}
         />
         <RawContainer>
-          <div className="row">
+          <div className="row mb-3">
           {projects.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
