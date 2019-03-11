@@ -76,7 +76,7 @@ module.exports = {
         short_name: `Haxing Ninja`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#000000`,
         display: `minimal-ui`,
         icon: `static/images/favicon.png`,
         include_favicon: true
