@@ -1,18 +1,26 @@
 import React from "react"
 import { graphql } from "gatsby"
 
+import { DiscussionEmbed } from 'disqus-react';
+
 import Bootstrap from "../components/bootstrap"
 import NavBar from "../components/nav-bar"
 import PrimaryContainer from "../components/primary-container"
 import SEO from "../components/seo"
 import InlineIcon from "../components/inline-icon"
-import DisqusComments from "../components/disqus-comments"
 
 import "./blog-post.css"
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
+
+    const disqusShortname = `haxingninja`
+    const disqusConfig = {
+      url: post.frontmatter.slug,
+      identifier: post.frontmatter.slug,
+      title: post.frontmatter.title,
+    }
 
     return (
       <div>
@@ -28,7 +36,7 @@ class BlogPostTemplate extends React.Component {
             <InlineIcon iconName="clock" />{post.frontmatter.date}
           </h6>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
-          <DisqusComments />
+          <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
         </PrimaryContainer>
       </div>
     )
