@@ -8,6 +8,10 @@
     "url": "https://github.com/DarkArc/darkarc.github.io/issues"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.15",
+    "@fortawesome/free-solid-svg-icons": "^5.7.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "bootstrap": "^4.3.1",
     "disqus-react": "^1.0.5",
     "gatsby": "^2.1.27",
     "gatsby-image": "^2.0.31",
@@ -23,6 +27,7 @@
     "gatsby-source-filesystem": "^2.0.23",
     "gatsby-transformer-remark": "^2.3.1",
     "gatsby-transformer-sharp": "^2.1.15",
+    "popper.js": "^1.14.7",
     "prismjs": "^1.15.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",

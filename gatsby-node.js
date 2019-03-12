@@ -148,3 +148,32 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 }
+
+const webpack = require('webpack');
+
+exports.onCreateWebpackConfig = ({ actions, stage, loaders }) => {
+  const config = {
+    plugins: [
+      new webpack.ProvidePlugin({
+        jQuery: 'jquery',
+        $: 'jquery',
+        jquery: 'jquery',
+      }),
+    ],
+  };
+  if (stage === 'build-html') {
+    config.module = {
+      rules: [
+        {
+          test: require.resolve('jquery/dist/jquery.min.js'),
+          use: loaders.null(),
+        },
+        {
+          test: require.resolve('bootstrap/dist/js/bootstrap.bundle.js'),
+          use: loaders.null(),
+        },
+      ],
+    };
+  }
+  actions.setWebpackConfig(config);
+};

@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import { DiscussionEmbed } from 'disqus-react';
+import { faClock } from '@fortawesome/free-solid-svg-icons'
 
 import Bootstrap from "../components/bootstrap"
 import NavBar from "../components/nav-bar"
@@ -33,7 +34,7 @@ class BlogPostTemplate extends React.Component {
         <PrimaryContainer>
           <h2>{post.frontmatter.title}</h2>
           <h6 className="mb-2 text-muted" style={{ borderBottom: '1px solid rgba(0, 0, 0, .1)' }}>
-            <InlineIcon iconName="clock" />{post.frontmatter.date}
+          <InlineIcon icon={faClock} />{post.frontmatter.date}
           </h6>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
           <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />

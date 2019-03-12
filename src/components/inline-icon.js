@@ -1,9 +1,17 @@
 import React from "react"
 
+import { config } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+config.autoAddCss = false
+
 class InlineIcon extends React.Component {
   render() {
-    let className = `oi oi-${this.props.iconName}`;
-    return <span className={className} aria-hidden="true" style={{paddingRight: '.25em'}} />;
+    return (
+        <span style={{paddingRight: '.25em'}}>
+          <FontAwesomeIcon icon={ this.props.icon } style={{width: '1em', height: '1em', verticalAlign: '-0.125em'}} />
+        </span>
+    );
   }
 }
 

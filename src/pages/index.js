@@ -1,6 +1,8 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
+import { faClock } from '@fortawesome/free-solid-svg-icons'
+
 import Bootstrap from "../components/bootstrap"
 import NavBar from "../components/nav-bar"
 import PrimaryContainer from "../components/primary-container"
@@ -27,7 +29,7 @@ class BlogIndex extends React.Component {
               <div className="card-body">
                 <h4 className="card-title">{node.frontmatter.title}</h4>
                 <h6 className="card-subtitle mb-2 text-muted">
-                <InlineIcon iconName="clock" />{node.frontmatter.date}
+                <InlineIcon icon={faClock} />{node.frontmatter.date}
                 </h6>
                 <p className="card-text"
                   dangerouslySetInnerHTML={{
