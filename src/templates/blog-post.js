@@ -32,7 +32,7 @@ class BlogPostTemplate extends React.Component {
           description={post.excerpt}
         />
         <PrimaryContainer>
-          <div className="mb-2 h1">
+          <div className="mb-2 h2">
             {post.frontmatter.title}
             <div className="float-lg-right text-muted mt-2" style={{fontSize: '.6em'}}>
               <InlineIcon icon={faClock} />{post.frontmatter.date}

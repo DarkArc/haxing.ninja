@@ -19,7 +19,7 @@ class GenericProjectTemplate extends React.Component {
           description={project.frontmatter.description}
         />
         <PrimaryContainer>
-          <h1>{project.frontmatter.title}</h1>
+          <h2>{project.frontmatter.title}</h2>
           <div className="row">
             <div className="col-md-9"
               dangerouslySetInnerHTML={{ __html: project.html }}

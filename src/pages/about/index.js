@@ -18,7 +18,7 @@ class AboutMe extends React.Component {
         <Bootstrap />
         <NavBar />
         <SEO
-          title="About Me"
+          title="About me"
           keywords={[`about`]}
         />
         <PrimaryContainer>

@@ -36,7 +36,7 @@ class BlogIndex extends React.Component {
             <div>
               { divider }
               <div className="mt-3" key={node.fields.slug}>
-                <div className="mb-2 h4">
+                <div className="mb-2 h3">
                   {node.frontmatter.title}
                   <div className="float-lg-right text-muted mt-1" style={{fontSize: '.6em'}}>
                     <InlineIcon icon={faClock} />{node.frontmatter.date}

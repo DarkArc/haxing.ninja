@@ -26,7 +26,7 @@ class AboutMe extends React.Component {
               <div className="col-md-6">
                 <div className="card mt-3" style={{minHeight: 'calc(100% - 1em)'}}>
                   <div className="card-body">
-                    <h4 className="card-title">{node.frontmatter.title}</h4>
+                    <h3 className="card-title">{node.frontmatter.title}</h3>
                     <p className="card-text" style={{paddingBottom: '1.5em'}} dangerouslySetInnerHTML={{
                       __html: node.frontmatter.description
                     }} />
