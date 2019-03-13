@@ -33,7 +33,7 @@ specific ones missing from your system.
 
 Once you have built the project using `make`, you'll need to set an install
 directory. To do this, you'll want to use
-`export PREFIX=$HOME/my_i3_install_dir/` You can of course,
+`export PREFIX=$HOME/my_i3_install_dir/`. You can of course,
 change `my_i3_install_dir` to anything you like.
 After this, you'll need to run `make install`.
 
