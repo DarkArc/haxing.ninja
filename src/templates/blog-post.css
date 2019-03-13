@@ -5,3 +5,21 @@ blockquote {
   border-left: 5px solid lightblue;
   font-style: italic;
 }
+
+.language-text {
+  background: #2b3239;
+  color: white;
+}
+
+p > code.language-text {
+  border-radius: 2px;
+  padding-top: .1em;
+  padding-bottom: .1em;
+  padding-left: .2em;
+  padding-right: .2em;
+}
+
+pre.language-text {
+  margin: 1em;
+  padding: 1em;
+}
