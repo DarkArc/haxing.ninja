@@ -36,15 +36,15 @@ class BlogIndex extends React.Component {
             <div>
               { divider }
               <div className="mt-3" key={node.fields.slug}>
-                <h4>{node.frontmatter.title}</h4>
-                <h6 className="mb-2 text-muted">
-                <InlineIcon icon={faClock} />{node.frontmatter.date}
-                </h6>
-                <p className="card-text"
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt
-                  }}
-                />
+                <div className="mb-2 h4">
+                  {node.frontmatter.title}
+                  <div className="float-lg-right text-muted mt-1" style={{fontSize: '.6em'}}>
+                    <InlineIcon icon={faClock} />{node.frontmatter.date}
+                  </div>
+                </div>
+                <div dangerouslySetInnerHTML={{
+                  __html: node.excerpt
+                }} />
                 <Link className="btn btn-link" to={node.fields.slug}>Read more</Link>
               </div>
             </div>

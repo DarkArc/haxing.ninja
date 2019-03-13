@@ -32,10 +32,13 @@ class BlogPostTemplate extends React.Component {
           description={post.excerpt}
         />
         <PrimaryContainer>
-          <h2>{post.frontmatter.title}</h2>
-          <h6 className="mb-2 text-muted" style={{ borderBottom: '1px solid rgba(0, 0, 0, .1)' }}>
-          <InlineIcon icon={faClock} />{post.frontmatter.date}
-          </h6>
+          <div className="mb-2 h2">
+            {post.frontmatter.title}
+            <div className="float-lg-right text-muted mt-1" style={{fontSize: '.6em'}}>
+              <InlineIcon icon={faClock} />{post.frontmatter.date}
+            </div>
+          </div>
+          <div className="w-75 mx-auto mb-3" style={{ borderBottom: '1px solid rgba(0, 0, 0, .1)' }}></div>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
           <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
         </PrimaryContainer>
