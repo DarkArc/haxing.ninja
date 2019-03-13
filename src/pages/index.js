@@ -13,6 +13,7 @@ class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
     const posts = data.allMarkdownRemark.edges
+    let passedFirst = false
 
     return (
       <div>
@@ -24,11 +25,19 @@ class BlogIndex extends React.Component {
         />
         <PrimaryContainer>
         {posts.map(({ node }) => {
+          let divider
+
+          if (passedFirst) {
+            divider = <div className="w-75 mx-auto mt-3" style={{ borderBottom: '1px solid rgba(0, 0, 0, .1)' }}></div>
+          }
+          passedFirst = true
+
           return (
-            <div className="card mt-3" key={node.fields.slug}>
-              <div className="card-body">
-                <h4 className="card-title">{node.frontmatter.title}</h4>
-                <h6 className="card-subtitle mb-2 text-muted">
+            <div>
+              { divider }
+              <div className="mt-3" key={node.fields.slug}>
+                <h4>{node.frontmatter.title}</h4>
+                <h6 className="mb-2 text-muted">
                 <InlineIcon icon={faClock} />{node.frontmatter.date}
                 </h6>
                 <p className="card-text"
