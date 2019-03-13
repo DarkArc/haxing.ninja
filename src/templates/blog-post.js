@@ -29,7 +29,7 @@ class BlogPostTemplate extends React.Component {
         <NavBar />
         <SEO
           title={post.frontmatter.title}
-          description={post.frontmatter.description || post.excerpt}
+          description={post.excerpt}
         />
         <PrimaryContainer>
           <h2>{post.frontmatter.title}</h2>
@@ -50,7 +50,7 @@ export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
-      excerpt(pruneLength: 160)
+      excerpt(format: HTML)
       html
       frontmatter {
         title
