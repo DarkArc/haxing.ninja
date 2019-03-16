@@ -45,7 +45,7 @@ class BlogIndex extends React.Component {
                 <div dangerouslySetInnerHTML={{
                   __html: node.excerpt
                 }} />
-                <Link className="btn btn-link" to={node.fields.slug}>Read more</Link>
+                <Link to={node.fields.slug}>Read more</Link>
               </div>
             </div>
           )
