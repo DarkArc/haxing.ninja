@@ -22,13 +22,13 @@ if you're a student, don't try to use these projects in your
 class -- especially verbatim -- you will get caught.
 
 ### Open source
-I’ve both created, and contributed to, number of open source projects over
+I’ve both created, and contributed to, a number of open source projects over
 the years, primarily in Java, JavaScript, and C++.
 
 ### Gaming
 
 I've been involved in, and (co-)founded several gaming groups over the years.
-Most recently, I created [Pakcet Loss Gaming](https://packetloss.gg/) with
+Most recently, I created [Packet Loss Gaming](https://packetloss.gg/) with
 the intention to create and promote, a friendly environment of
 respectful gamers.
 
@@ -46,7 +46,7 @@ explore, and see what there is to be seen.
 
 ### Linux
 
-I started using Linux as my primary operating system early 2013.
+I started using Linux as my primary operating system in early 2013.
 For various reasons, I briefly had to go back to Windows for about a year,
 before returning to Linux, and removing Windows from my computers in 2014.
 I'm a huge fan of both [GNOME](http://gnome.org) and [KDE](http://kde.org)
